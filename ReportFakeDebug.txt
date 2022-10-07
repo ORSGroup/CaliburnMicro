@@ -1,0 +1,12 @@
+{
+	"PdfFileName": "C:\\Projects\\Rumenta\\CaliburnMicro\\ReportFakeDebug.pdf",
+	"XpsFileName": "C:\\Projects\\Rumenta\\CaliburnMicro\\ReportFakeDebug.xps",
+	"UserId": "lanibaldi",
+	"CustomerIDS": null,
+	"ReferenceDate": null,
+	"ParamsFileName": "C:\\Projects\\Rumenta\\CaliburnMicro\\ReportFakeDebug.txt",
+	"ReportKind": "ReportFake",
+	"HolderIds": null,
+	"PortfolioId": null,
+	"ProposalId": "1234"
+}
