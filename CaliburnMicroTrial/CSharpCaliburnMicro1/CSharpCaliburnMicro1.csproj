@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Luca Anibaldi</Authors>
+    <Company>ORS</Company>
+    <Product>Caliburn Micro Template</Product>
+    <Description>Caliburn.Micro Template for .net core WPF apps</Description>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageLicenseUrl>https://github.com/vb2ae/CaliburnMicroTemplates/blob/main/LICENSE</PackageLicenseUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>Caliburn.Micro WPF .net core VB</PackageTags>
+    <RepositoryUrl></RepositoryUrl>
+    <Version>1.0.0</Version>
+    <UseWindowsForms>False</UseWindowsForms>
+    <EnableDefaultContentItems>False</EnableDefaultContentItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+    <None Remove="Images\logofooter.png" />
+    <None Remove="Images\logofooter_old.png" />
+    <None Remove="Images\watermark.png" />
+    <None Remove="Images\watermark_old.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Caliburn.Micro" Version="4.0.212" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Ninject" Version="3.3.6" />
+    <PackageReference Include="OxyPlot.Core" Version="2.1.0" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="Serilog.Expressions" Version="3.4.0">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="SharpGL.SceneGraph" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\logofooter.png" />
+    <Resource Include="Images\logofooter_old.png" />
+    <Resource Include="Images\watermark.png" />
+    <Resource Include="Images\watermark_old.png" />
+  </ItemGroup>
+
+</Project>

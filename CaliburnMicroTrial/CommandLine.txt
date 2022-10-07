@@ -1,0 +1,5 @@
+Created a fake command line:
+-f -p:"C:\Projects\Rumenta\CaliburnMicro\ReportFakeDebug.txt"
+
+
+
